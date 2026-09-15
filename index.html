@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Jelajah Nusantara — Paket Wisata Indonesia</title>
+<meta name="description" content="Jelajah Nusantara menawarkan paket wisata ke destinasi terbaik Indonesia: Bali, Raja Ampat, Labuan Bajo, Bromo, Borobudur, dan Danau Toba." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#hero" class="logo">Jelajah<span>Nusantara</span></a>
+    <nav class="nav" id="nav">
+      <a href="#destinasi">Destinasi</a>
+      <a href="#paket">Paket</a>
+      <a href="#keunggulan">Keunggulan</a>
+      <a href="#testimoni">Testimoni</a>
+      <a href="#kontak" class="btn btn-primary btn-sm">Pesan Sekarang</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Buka menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-inner">
+    <p class="eyebrow reveal">🇮🇩 17.000+ pulau, satu petualangan</p>
+    <h1 class="reveal">Temukan Keindahan <span class="highlight">Indonesia</span> Tanpa Ribet</h1>
+    <p class="lead reveal">Paket wisata lengkap dengan pemandu lokal, transportasi, dan penginapan terpilih. Kamu tinggal siapkan koper dan kamera.</p>
+    <div class="hero-actions reveal">
+      <a href="#paket" class="btn btn-primary">Lihat Paket Wisata</a>
+      <a href="#destinasi" class="btn btn-ghost">Jelajahi Destinasi</a>
+    </div>
+
+    <form class="search-card reveal" id="searchForm">
+      <div class="field">
+        <label for="tujuan">Tujuan</label>
+        <select id="tujuan">
+          <option>Bali</option>
+          <option>Raja Ampat</option>
+          <option>Labuan Bajo</option>
+          <option>Bromo — Malang</option>
+          <option>Yogyakarta — Borobudur</option>
+          <option>Danau Toba</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="tanggal">Tanggal Berangkat</label>
+        <input type="date" id="tanggal" />
+      </div>
+      <div class="field">
+        <label for="orang">Jumlah Orang</label>
+        <select id="orang">
+          <option>1 orang</option>
+          <option selected>2 orang</option>
+          <option>3–5 orang</option>
+          <option>6+ orang (grup)</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary">Cari Trip</button>
+    </form>
+
+    <div class="stats reveal">
+      <div><strong>12.400+</strong><span>Traveler bahagia</span></div>
+      <div><strong>38</strong><span>Destinasi pilihan</span></div>
+      <div><strong>4.9/5</strong><span>Rating ulasan</span></div>
+      <div><strong>24/7</strong><span>Bantuan perjalanan</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINASI -->
+<section class="section" id="destinasi">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Destinasi Populer</h2>
+      <p>Dari pantai kelas dunia sampai warisan budaya ribuan tahun.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card destination reveal">
+        <img src="https://picsum.photos/seed/bali-beach/800/600" alt="Pantai di Bali" loading="lazy" />
+        <div class="card-body">
+          <span class="tag">Bali</span>
+          <h3>Ubud &amp; Pantai Selatan</h3>
+          <p>Sawah terasering, pura di tepi laut, dan sunset terbaik di Uluwatu.</p>
+          <div class="card-foot"><span class="price">Rp 2.450.000</span><span class="muted">3H2M</span></div>
+        </div>
+      </article>
+
+      <article class="card destination reveal">
+        <img src="https://picsum.photos/seed/raja-ampat/800/600" alt="Gugusan pulau Raja Ampat" loading="lazy" />
+        <div class="card-body">
+          <span class="tag">Papua Barat</span>
+          <h3>Raja Ampat</h3>
+          <p>Surga diving dengan terumbu karang terkaya di dunia.</p>
+          <div class="card-foot"><span class="price">Rp 8.900.000</span><span class="muted">5H4M</span></div>
+        </div>
+      </article>
+
+      <article class="card destination reveal">
+        <img src="https://picsum.photos/seed/labuan-bajo/800/600" alt="Labuan Bajo dan Pulau Komodo" loading="lazy" />
+        <div class="card-body">
+          <span class="tag">NTT</span>
+          <h3>Labuan Bajo &amp; Komodo</h3>
+          <p>Sailing trip, Pink Beach, dan bertemu komodo di habitat aslinya.</p>
+          <div class="card-foot"><span class="price">Rp 4.750.000</span><span class="muted">4H3M</span></div>
+        </div>
+      </article>
+
+      <article class="card destination reveal">
+        <img src="https://picsum.photos/seed/bromo-sunrise/800/600" alt="Sunrise di Gunung Bromo" loading="lazy" />
+        <div class="card-body">
+          <span class="tag">Jawa Timur</span>
+          <h3>Bromo Sunrise</h3>
+          <p>Negeri di atas awan, kawah berasap, dan padang savana Teletubbies.</p>
+          <div class="card-foot"><span class="price">Rp 1.350.000</span><span class="muted">2H1M</span></div>
+        </div>
+      </article>
+
+      <article class="card destination reveal">
+        <img src="https://picsum.photos/seed/borobudur/800/600" alt="Candi Borobudur" loading="lazy" />
+        <div class="card-body">
+          <span class="tag">Yogyakarta</span>
+          <h3>Borobudur &amp; Prambanan</h3>
+          <p>Warisan dunia UNESCO plus kuliner legendaris Malioboro.</p>
+          <div class="card-foot"><span class="price">Rp 1.850.000</span><span class="muted">3H2M</span></div>
+        </div>
+      </article>
+
+      <article class="card destination reveal">
+        <img src="https://picsum.photos/seed/danau-toba/800/600" alt="Danau Toba" loading="lazy" />
+        <div class="card-body">
+          <span class="tag">Sumatera Utara</span>
+          <h3>Danau Toba &amp; Samosir</h3>
+          <p>Danau vulkanik terbesar di dunia dengan budaya Batak yang kental.</p>
+          <div class="card-foot"><span class="price">Rp 2.150.000</span><span class="muted">3H2M</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- PAKET -->
+<section class="section section-alt" id="paket">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Paket Wisata</h2>
+      <p>Pilih gaya jalan-jalanmu. Semua harga per orang, sudah termasuk pajak.</p>
+    </div>
+
+    <div class="grid grid-3">
+      <article class="card pricing reveal">
+        <h3>Backpacker</h3>
+        <p class="amount">Rp 1,35<span>jt</span></p>
+        <ul>
+          <li>Penginapan hostel / homestay</li>
+          <li>Transportasi lokal</li>
+          <li>Pemandu wisata grup</li>
+          <li>Sarapan harian</li>
+        </ul>
+        <a href="#kontak" class="btn btn-ghost">Pilih Paket</a>
+      </article>
+
+      <article class="card pricing featured reveal">
+        <span class="badge">Paling Populer</span>
+        <h3>Family Trip</h3>
+        <p class="amount">Rp 3,45<span>jt</span></p>
+        <ul>
+          <li>Hotel bintang 3–4</li>
+          <li>Mobil privat + driver</li>
+          <li>Pemandu wisata privat</li>
+          <li>Makan 3x sehari</li>
+          <li>Tiket semua atraksi</li>
+        </ul>
+        <a href="#kontak" class="btn btn-primary">Pilih Paket</a>
+      </article>
+
+      <article class="card pricing reveal">
+        <h3>Honeymoon</h3>
+        <p class="amount">Rp 6,90<span>jt</span></p>
+        <ul>
+          <li>Resort / villa privat</li>
+          <li>Penjemputan bandara</li>
+          <li>Candle light dinner</li>
+          <li>Sesi foto profesional</li>
+          <li>Spa untuk 2 orang</li>
+        </ul>
+        <a href="#kontak" class="btn btn-ghost">Pilih Paket</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- KEUNGGULAN -->
+<section class="section" id="keunggulan">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Kenapa Pilih Kami?</h2>
+      <p>Pengalaman lokal, harga transparan, tanpa biaya tersembunyi.</p>
+    </div>
+    <div class="grid grid-4">
+      <div class="feature reveal"><div class="icon">🧭</div><h3>Pemandu Lokal</h3><p>Dipandu warga setempat yang tahu spot terbaik dan cerita di baliknya.</p></div>
+      <div class="feature reveal"><div class="icon">💳</div><h3>Harga Transparan</h3><p>Rincian biaya jelas sejak awal. Bisa dibayar bertahap.</p></div>
+      <div class="feature reveal"><div class="icon">🛡️</div><h3>Asuransi Perjalanan</h3><p>Setiap peserta otomatis dilindungi selama perjalanan.</p></div>
+      <div class="feature reveal"><div class="icon">🌱</div><h3>Wisata Bertanggung Jawab</h3><p>Bekerja sama dengan UMKM dan komunitas desa wisata.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="section section-alt" id="testimoni">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Kata Traveler</h2>
+      <p>Lebih dari 12.000 perjalanan sudah kami rencanakan.</p>
+    </div>
+    <div class="grid grid-3">
+      <blockquote class="card quote reveal">
+        <p>“Trip ke Labuan Bajo rapi banget. Jadwal on time, guide-nya ramah, dan spot fotonya juara.”</p>
+        <footer><img src="https://picsum.photos/seed/user-aisyah/80/80" alt="" /><span><strong>Aisyah R.</strong>Jakarta</span></footer>
+      </blockquote>
+      <blockquote class="card quote reveal">
+        <p>“Pertama kali bawa anak-anak ke Bromo dan semuanya dihandle. Nggak perlu mikir apa-apa.”</p>
+        <footer><img src="https://picsum.photos/seed/user-bagas/80/80" alt="" /><span><strong>Bagas P.</strong>Surabaya</span></footer>
+      </blockquote>
+      <blockquote class="card quote reveal">
+        <p>“Honeymoon di Raja Ampat jadi kenangan terbaik. Worth every rupiah!”</p>
+        <footer><img src="https://picsum.photos/seed/user-clara/80/80" alt="" /><span><strong>Clara &amp; Dimas</strong>Bandung</span></footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- KONTAK / CTA -->
+<section class="cta" id="kontak">
+  <div class="container cta-inner">
+    <div class="reveal">
+      <h2>Siap Jalan-Jalan?</h2>
+      <p>Tinggalkan kontakmu, tim kami kirim rekomendasi itinerary gratis dalam 1x24 jam.</p>
+      <ul class="contact-list">
+        <li>📞 +62 812-3456-7890</li>
+        <li>✉️ halo@jelajahnusantara.id</li>
+        <li>📍 Jl. Malioboro No. 17, Yogyakarta</li>
+      </ul>
+    </div>
+    <form class="card contact-form reveal" id="contactForm">
+      <div class="field">
+        <label for="nama">Nama Lengkap</label>
+        <input type="text" id="nama" placeholder="Nama kamu" required />
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="kamu@email.com" required />
+      </div>
+      <div class="field">
+        <label for="pesan">Rencana Perjalanan</label>
+        <textarea id="pesan" rows="3" placeholder="Mau ke mana, berapa orang, kapan?"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Kirim Permintaan</button>
+      <p class="form-note" id="formNote" hidden>Terima kasih! Permintaanmu sudah kami terima. 🎉</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <a href="#hero" class="logo logo-light">Jelajah<span>Nusantara</span></a>
+      <p class="muted">Agen perjalanan lokal untuk destinasi terbaik Indonesia.</p>
+    </div>
+    <div>
+      <h4>Destinasi</h4>
+      <a href="#destinasi">Bali</a><a href="#destinasi">Raja Ampat</a><a href="#destinasi">Labuan Bajo</a><a href="#destinasi">Danau Toba</a>
+    </div>
+    <div>
+      <h4>Perusahaan</h4>
+      <a href="#keunggulan">Tentang Kami</a><a href="#paket">Paket Wisata</a><a href="#testimoni">Ulasan</a><a href="#kontak">Kontak</a>
+    </div>
+    <div>
+      <h4>Ikuti Kami</h4>
+      <a href="#">Instagram</a><a href="#">TikTok</a><a href="#">YouTube</a><a href="#">WhatsApp</a>
+    </div>
+  </div>
+  <div class="container copyright">
+    <p>&copy; <span id="year">2026</span> Jelajah Nusantara. Proyek demo landing page.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
